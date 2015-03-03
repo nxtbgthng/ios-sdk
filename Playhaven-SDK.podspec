@@ -25,9 +25,9 @@ Pod::Spec.new do |s|
 
   s.platform = :ios
 
-  s.source_files = 'Cache', 'src', 'JSON', 'WaterWorks'
+  s.requires_arc = false
 
-  s.clean_paths = "example", "tests", "*.mobileprovision", "PlayHaven_SDK_Agreement.rtf"
+  s.source_files = 'Cache', 'src', 'JSON', 'WaterWorks'
 
   s.frameworks = 'SystemConfiguration', 'CFNetwork', 'StoreKit', 'CoreGraphics', 'QuartzCore'
 
